@@ -33,12 +33,25 @@ function trueOrFalse(inAscOrder){
 // If the value is a multiple of 3 & 5: use the value 'FizzBuzz' instead
 
 function fillArray(){
-  var count = 0;
-var arr = [];
-  for(i=0;i<100;i++){
-    if(arr[i]=== ""){
-      arr.push(count++);
-    }
-  } console.log(arr);
   
+var arr = [];
+  for(i=1;i<n;i++){
+    if(i%3==0 && i%5==0){
+      arr.push("fizzbuzz");
+    }
+  } else if(i%3==0){
+    arr.push("fizz")
+  }
+  else if (i%5==0){
+    arr.push("buzz")
+  } else arr.push(i)
 }
+
+
+
+
+// In DNA strings, symbols "A" and "T" are complements of each other, as are "C" and "G". Given one side of the DNA, you need to find the complementary side.
+
+// DNAStrand("ATTGC") ==>  "TAACG"
+// DNAStrand("GTAT")  ==>  "CATA"
+
